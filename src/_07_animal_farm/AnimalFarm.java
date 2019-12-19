@@ -15,13 +15,39 @@ import javax.swing.JOptionPane;
 public class AnimalFarm {
 	
 	public static void main(String[] args) {
-			
+			String animal = "Dog";
 		/* 1. Ask the user which animal they want, then play the sound of that animal. */			 
-			
-		/* 2. Make it so that the user can keep entering new animals. */
-
+			JOptionPane.showInputDialog(" Which animal sound do you want to hear out of a cow, duck, dog, cat or llama?");
+		
+/* 2. Make it so that the user can keep entering new animals. */
+if (animal.equals("cow")) {
+	playMoo();
+}
+	
+	if (animal.equals("duck")) {
+		playQuack();
 	}
-
+	
+	if (animal.equals("cat")) {
+		playWoof();
+	}	
+	
+	if (animal.equals("dog")) {
+		playWoof() ;
+	}
+	
+	
+	if (animal.equals("llama")) {
+		playLlama();
+	}
+	
+	
+	
+	
+	
+	
+	
+	}
 	static void playMoo() {
 		playNoise(mooFile);
 	}
@@ -34,7 +60,7 @@ public class AnimalFarm {
 		playNoise(woofFile);
 	}
 	
-	static void playMeow() {
+	static void playWoof() {
 		playNoise(meowFile);
 	}
 	
